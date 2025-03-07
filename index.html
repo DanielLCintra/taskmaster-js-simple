@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskMaster - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Demonstração de inclusão de JavaScript externo -->
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>TaskMaster</h1>
+        <p class="tagline">Organizando suas tarefas com eficiência</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Seção para demonstrar manipulação do DOM -->
+      <section class="task-input">
+        <h2>Nova Tarefa</h2>
+        <form id="taskForm">
+          <div class="form-group">
+            <label for="taskTitle">Título</label>
+            <input
+              type="text"
+              id="taskTitle"
+              placeholder="Digite o título da tarefa"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="taskDescription">Descrição</label>
+            <textarea
+              id="taskDescription"
+              placeholder="Descreva sua tarefa"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="taskDueDate">Prazo</label>
+            <input type="date" id="taskDueDate" />
+          </div>
+          <div class="form-group">
+            <label for="taskPriority">Prioridade</label>
+            <select id="taskPriority">
+              <option value="baixa">Baixa</option>
+              <option value="média" selected>Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Adicionar Tarefa</button>
+        </form>
+      </section>
+
+      <!-- Seção para demonstrar renderização dinâmica -->
+      <section class="task-list">
+        <h2>Minhas Tarefas</h2>
+        <div class="task-controls">
+          <div class="search-box">
+            <input
+              type="text"
+              id="searchTask"
+              placeholder="Buscar tarefas..."
+            />
+          </div>
+          <div class="filter-box">
+            <select id="filterPriority">
+              <option value="todas">Todas as prioridades</option>
+              <option value="baixa">Baixa</option>
+              <option value="média">Média</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+        </div>
+        <!-- Contêiner para injeção de tarefas via JavaScript -->
+        <div id="taskContainer">
+          <!-- Exemplo de estrutura de tarefa - será gerado via JS -->
+          <div class="task-card sample-task">
+            <div class="task-header">
+              <h3>Exemplo de Tarefa</h3>
+              <span class="priority medium">Média</span>
+            </div>
+            <div class="task-body">
+              <p>
+                Esta é uma tarefa de exemplo para demonstrar a estrutura HTML.
+                Será substituída por conteúdo dinâmico.
+              </p>
+            </div>
+            <div class="task-footer">
+              <span class="due-date">Prazo: 01/01/2025</span>
+              <div class="task-actions">
+                <button class="btn-edit">Editar</button>
+                <button class="btn-delete">Excluir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção para estatísticas (será implementada posteriormente) -->
+      <section class="task-stats">
+        <h2>Estatísticas</h2>
+        <div id="statsContainer">
+          <p>Carregando estatísticas...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 TaskMaster - Projeto do Curso de JavaScript Frontend</p>
+        <p class="quote">
+          "Com grandes poderes vem grandes responsabilidades." - Tio Ben (Stan
+          Lee/Marvel Comics)
+        </p>
+      </div>
+    </footer>
+
+    <!-- Demonstração de inclusão de JavaScript inline -->
+    <script>
+      // Este é um exemplo de JavaScript inline
+      // Será usado nas primeiras aulas para demonstrar conceitos básicos
+      console.log(
+        "Bem-vindo ao TaskMaster! Este é um exemplo de JavaScript inline."
+      );
+    </script>
+  </body>
+</html>
