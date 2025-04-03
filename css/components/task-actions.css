@@ -1,0 +1,49 @@
+/* Ações da tarefa */
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border: none;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.task-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.task-actions button:active {
+  transform: translateY(0);
+}
+
+.btn-toggle {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.btn-toggle:hover {
+  background-color: #bbdefb;
+}
+
+.btn-edit {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.btn-edit:hover {
+  background-color: #c8e6c9;
+}
+
+.btn-delete {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.btn-delete:hover {
+  background-color: #ffcdd2;
+}

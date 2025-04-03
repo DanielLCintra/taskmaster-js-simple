@@ -1,0 +1,39 @@
+/* Controles de tarefas */
+.task-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.filter-box select {
+  min-width: 150px;
+}
+
+.btn-clear {
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-clear:hover {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}

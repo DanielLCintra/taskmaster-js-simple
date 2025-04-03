@@ -1,0 +1,50 @@
+/* base.css */
+
+/* Variáveis CSS e temas */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --card-color: #fff;
+  --border-radius: 5px;
+  --shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  /* Cores de prioridade */
+  --priority-high: #e74c3c;
+  --priority-medium: #f39c12;
+  --priority-low: #2ecc71;
+
+  /* Cores para notificações */
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+  --info-color: #3498db;
+  --warning-color: #f39c12;
+}
+
+/* Reset e estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+  margin-bottom: 0.5em;
+}
+
+/* Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

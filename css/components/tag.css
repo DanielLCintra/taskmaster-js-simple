@@ -1,0 +1,20 @@
+/* Tags */
+.task-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.tag:hover {
+  background-color: #e0e0e0;
+}
