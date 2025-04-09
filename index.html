@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskMaster - Gerenciador de Tarefas</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Demonstração de inclusão de JavaScript externo -->
-    <script src="js/app.js" defer></script>
+    <!-- Importa o módulo principal -->
+    <script type="module" src="js/app.js"></script>
   </head>
   <body>
     <header>
@@ -17,7 +17,7 @@
     </header>
 
     <main class="container">
-      <!-- Seção para demonstrar manipulação do DOM -->
+      <!-- Seção para adicionar nova tarefa -->
       <section class="task-input">
         <h2>Nova Tarefa</h2>
         <form id="taskForm">
@@ -53,7 +53,7 @@
         </form>
       </section>
 
-      <!-- Seção para demonstrar renderização dinâmica -->
+      <!-- Seção para listagem de tarefas -->
       <section class="task-list">
         <h2>Minhas Tarefas</h2>
         <div class="task-controls">
@@ -73,9 +73,8 @@
             </select>
           </div>
         </div>
-        <!-- Contêiner para injeção de tarefas via JavaScript -->
         <div id="taskContainer">
-          <!-- Exemplo de estrutura de tarefa - será gerado via JS -->
+          <!-- Exemplo de tarefa que será removido via JS -->
           <div class="task-card sample-task">
             <div class="task-header">
               <h3>Exemplo de Tarefa</h3>
@@ -98,7 +97,7 @@
         </div>
       </section>
 
-      <!-- Seção para estatísticas (será implementada posteriormente) -->
+      <!-- Seção para exibir estatísticas -->
       <section class="task-stats">
         <h2>Estatísticas</h2>
         <div id="statsContainer">
@@ -116,14 +115,5 @@
         </p>
       </div>
     </footer>
-
-    <!-- Demonstração de inclusão de JavaScript inline -->
-    <script>
-      // Este é um exemplo de JavaScript inline
-      // Será usado nas primeiras aulas para demonstrar conceitos básicos
-      console.log(
-        "Bem-vindo ao TaskMaster! Este é um exemplo de JavaScript inline."
-      );
-    </script>
   </body>
 </html>

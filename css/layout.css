@@ -1,0 +1,43 @@
+/* layout.css */
+
+/* Cabeçalho */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+
+header h1 {
+  margin-bottom: 0.2rem;
+}
+
+.tagline {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.quote {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Seções da página */
+section {
+  background-color: var(--card-color);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}

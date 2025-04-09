@@ -1,0 +1,42 @@
+/* Cartões de tarefas */
+.task-card {
+  border: 1px solid #eee;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.task-body {
+  padding: 1rem;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.3s, padding 0.3s;
+}
+
+.task-body.collapsed {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
+}
